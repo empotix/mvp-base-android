@@ -43,7 +43,7 @@ a screen in the app represented by a fragment/activity (the view), a view interf
   -  **main** - a set of main/launcher activities/fragments (e.g. tabbed layout).
   Typically use one per app and delete the others.
   -  **mvpcandidate1** - E.g. sign in screen.
-  -  **mvpcandidate2** - E.g. email inbox
+  -  **mvpcandidate2** - E.g. email inbox.
   -  etc...
 - **util** - any util classes, e.g. for handling dates, strings, dialogs.
 

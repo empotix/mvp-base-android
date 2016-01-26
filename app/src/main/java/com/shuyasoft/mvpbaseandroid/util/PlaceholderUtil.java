@@ -1,4 +1,4 @@
-package com.shuyasoft.mvpbaseandroid.utils;
+package com.shuyasoft.mvpbaseandroid.util;
 
 /**
  * Created by Darren on 26/01/16.

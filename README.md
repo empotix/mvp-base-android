@@ -45,7 +45,7 @@ a screen in the app represented by a fragment/activity (the view), a view interf
   -  **mvpcandidate1** - E.g. sign in screen.
   -  **mvpcandidate2** - E.g. email inbox
   -  etc...
-- **ui** - any util classes, e.g. for handling dates, strings, dialogs.
+- **util** - any util classes, e.g. for handling dates, strings, dialogs.
 
 ## Licence
 

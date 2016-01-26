@@ -21,6 +21,31 @@ Libraries used:
 
 ## Usage
 
+### Folder Structure
+
+The folder structure used in this app is based on the [Ribot app](https://github.com/ribot/ribot-app-android) structure.
+The app has the following structure:
+
+- **data** - represents the entire data layer.
+Includes the following packages (and single files e.g. to handle bus events):
+  -  **entities** - all domain-specific java objects. E.g. objects serialized via Retrofit.
+  -  **local** - helper classes for interacting with local storage. E.g. DatabaseService, PreferencesService.
+  -  **server** - helper classes for interacting with remote API's. E.g. Retrofit, Parse.
+  -  **repositories** - domain-specific data managers containing RxJava operators
+  to interact with classes in 'local' and 'server'. Example method: getUserByName().
+  Each method is typically structured as an interface and implementation.
+- **injection** - dependency injection using [Dagger](http://google.github.io/dagger)
+modules/components.
+- **service** - a class for each of the background services, e.g. beacons, notifications.
+- **ui** - the presentation layer. Each folder represents an MVP candidate -
+a screen in the app represented by a fragment/activity (the view), a view interface and a presenter.
+  -  **base** - a set of base classes from which MVP candidates can inherit.
+  -  **main** - a set of main/launcher activities/fragments (e.g. tabbed layout).
+  Typically use one per app and delete the others.
+  -  **mvpcandidate1** - E.g. sign in screen.
+  -  **mvpcandidate2** - E.g. email inbox
+  -  etc...
+
 ## Licence
 
 ```
